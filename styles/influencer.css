@@ -187,6 +187,41 @@ ul li a {
     border: none;
 }
 
+/* footer section style */
+.footer {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+    color: #FFF;
+    background-color: #0A0826;
+}
+
+.footer-cont {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+.footer-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.fot-icon a i {
+    font-size: 1.5rem;
+    color: #ffffffaf;
+    margin: 10px;
+}
+
+
+
 @media screen and (max-width:576px) {
 
     .navbar,
@@ -198,12 +233,14 @@ ul li a {
         display: none;
     }
 
-    .header-section {
+    .header-section,
+    .product-review {
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .header-section img {
+    .header-section img,
+    .product-review img {
         width: 100%;
     }
 
