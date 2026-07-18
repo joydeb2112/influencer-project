@@ -156,14 +156,11 @@ ul li a {
     align-items: center;
 }
 
-/* .product-review img {
+.product-review img {
     width: 100%;
-    max-width: 420px;
-} */
-
-.review-cont {
-    max-width: 610px;
+    max-width: 430px;
 }
+
 
 .review-title {
     font-size: 2.375rem;
@@ -176,7 +173,7 @@ ul li a {
 .review-description {
     color: #6C6C6C;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .review-btn {
@@ -221,7 +218,6 @@ ul li a {
 }
 
 
-
 @media screen and (max-width:576px) {
 
     .navbar,
@@ -245,11 +241,21 @@ ul li a {
     }
 
     .company-container {
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: space-evenly;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .product-items {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .product-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company-container {
+        margin-top: 20px;
+        grid-template-columns: repeat(7, 1fr);
     }
 }
